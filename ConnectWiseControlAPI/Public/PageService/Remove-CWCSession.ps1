@@ -8,7 +8,7 @@ function Remove-CWCSession
         [string]$Group
     )
 
-    $Endpoint = 'Services/PageService.ashx/AddEventToSessions'
+    $Endpoint = 'Services/PageService.ashx/AddSessionEvents'
 
     $SessionEventType = 21
     $Body = ConvertTo-Json @(@($Group), @($GUID), $SessionEventType, '')
